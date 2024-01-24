@@ -1,0 +1,105 @@
+$color1: #14213d;
+$color2: #003566;
+$color3: #fca311;
+$color4: #e5e5e5;
+
+@font-face {
+    font-family: gochi;
+    src: url(../font/GochiHand-Regular.ttf);
+}
+main {
+    background-color: #14213d;
+    min-height: 100vh;
+    color: $color3;
+    font-family: gochi;
+}
+
+h1 {
+    font-size: 3.5rem;
+
+}
+button{
+    color: $color2;
+}
+section {
+    
+    &:nth-of-type(1) {
+        button {
+            font-weight: 600;
+            transition: 1s;
+            background-color: $color3;
+
+            &:hover {
+                background-color: $color1;
+                border: 1px solid $color3;
+                color: $color3;
+            }
+        }
+
+        input {
+            outline: none;
+            color: $color1;
+        }
+    }
+
+    &:nth-of-type(2) {
+        >.row>div{
+            min-height: 350px;
+            border: 1px solid $color3;
+            border-bottom-left-radius: 100px;
+            border-bottom-right-radius: 100px;
+            background-image: radial-gradient($color2 , $color1);
+        }
+    }
+}
+li{
+    border-bottom: 1px solid $color3;
+    width: 100%;
+    padding: 10px 0px;
+    transition: 0.4s;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: space-between;
+    align-items: center;
+    >input{
+        width: 15px;
+        height: 15px;
+    }
+
+    strong{
+        word-break: break-all;
+        font-size: 1.5rem;
+    }
+    button{
+        width: 30px;
+        height: 30px;
+        text-align: center;
+        border-radius: 5px;
+        background-color: $color3;
+        transition: 0.4s;
+        
+        &:hover{
+            background-color: $color1;
+            color: $color3;
+        }
+       
+    }
+}
+#clrbtn{
+
+    button{
+        
+        text-align: center;
+        border-radius: 5px;
+        background-color: $color3;
+        font-size: 1.5rem;
+        transition: 0.4s;
+        width: 120px;
+            height: 50px;
+        &:hover{
+            background-color: $color1;
+            color: $color3;
+            
+        }
+    }
+}

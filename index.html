@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to-do-list</title>
+    <link rel="stylesheet" href="assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/font/node_modules/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/stylesheet/master.css">
+</head>
+
+<body>
+    <main>
+        <div class="container-fluid xxl-container">
+            <div class="row">
+                <h1 class="text-uppercase text-center p-5">to do list</h1>
+                <section class="col-12 ">
+                    <div class="row justify-content-center ">
+
+
+                        <input type="text" id="inp" placeholder="Enter your task here" class="rounded-3  py-2 col-3">
+                        <button onclick="ltodo()" class=" py-2 rounded-3 col-1 mx-1 text-uppercase ">add task</button>
+
+
+                    </div>
+                </section>
+                <section class="rounded-bottom col-12 my-5 ">
+                    <div class="row justify-content-center">
+                        <div class="col-4 overflow-hidden m-0 p-0">
+                            <ul id="mylist" class="w-100 py-2 px-3 m-0 row d-none"></ul>
+                        </div>
+                    </div>
+                </section>
+                <div id="clrbtn" class="d-flex justify-content-center">
+                    <button class="d-flex d-none justify-content-center align-items-center" onclick="_all()"
+                        id="btn">Clear All</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/javascript/master.js">
+        
+    </script>
+</body>
+
+</html>
